@@ -34,9 +34,8 @@ h1 {
 .box__text {
   padding: 1em;
   position: absolute;
-  top: 0.5em;
   background: #8e8e8e;
-  border-radius: 0 0.5em 0.5em 0;
+  border-radius: 0.5em;
   color: #ffe900;
   opacity: 0;
   font-weight: 600;
@@ -45,22 +44,52 @@ h1 {
   z-index: 1;
 }
 
-.box h3 {
+.box__vowel, .box__consonant {
   margin: 0;
   padding: 0;
   font-size: 5em;
+}
+
+.box__vowel {
   color: #de0000;
 }
 
-.box__img {
+.box__consonant {
+  color: blue;
+}
+
+.box__img, .box__img-bus, .box__img-dog, .box__img-frog, .box__img-horse {
   position: relative;
   display: flex;
+  cursor: pointer;
+}
+
+.box__img {
   flex-flow: row;
+}
+
+.box__img-bus, .box__img-dog, .box__img-frog, .box__img-horse {
+  justify-content: center;
 }
 
 .box__img img {
   width: 50%;
-  cursor: pointer;
+}
+
+.box__img-bus img {
+  width: 65%;
+}
+
+.box__img-dog img {
+  width: 47%;
+}
+
+.box__img-frog img {
+  width: 55%;
+}
+
+.box__img-horse img {
+  width: 70%;
 }
 
 .box p {
@@ -68,11 +97,15 @@ h1 {
 }
 
 .box span {
-  padding: 1em;
+  padding: 0.7em;
   font-weight: 600;
+}
+
+.box__vowel:hover, .box__consonant:hover {
+  cursor: pointer;
 }
 
 .box:hover .box__text {
   opacity: 0.97;
-  transform: translateX(15em);
+  transform: translateY(16.5em);
 }
