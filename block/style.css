@@ -4,7 +4,7 @@ body {
   font-size: 1rem;
   font-family: sans-serif;
   text-align: center;
-  background: #7f8cff;
+  background: #8577ff;
 }
 
 h1 {
@@ -58,17 +58,31 @@ h1 {
   color: blue;
 }
 
-.box__img, .box__img-bus, .box__img-dog, .box__img-frog, .box__img-horse {
+.box__img, .box__img-bus, .box__img-dog, .box__img-frog,
+.box__img-horse, .box__img-jam, .box__img-kangaroo,
+.box__img-lemon, .box__img-mouse, .box__img-nut,
+.box__img-pig, .box__img-queen, .box__img-rocket,
+.box__img-snake, .box__img-telephone, .box__img-vase,
+.box__img-window, .box__img-fox, .box__img-yellow,
+.box__img-zebra {
   position: relative;
   display: flex;
   cursor: pointer;
 }
 
-.box__img {
+.box__img, .box__img-yellow {
   flex-flow: row;
 }
 
-.box__img-bus, .box__img-dog, .box__img-frog, .box__img-horse {
+.box__img-yellow {
+  margin-top: 2.5em;
+}
+
+.box__img-bus, .box__img-dog, .box__img-frog, .box__img-horse,
+.box__img-jam, .box__img-kangaroo, .box__img-lemon, .box__img-mouse,
+.box__img-nut, .box__img-pig, .box__img-queen, .box__img-rocket,
+.box__img-snake, .box__img-telephone, .box__img-vase,
+.box__img-window, .box__img-fox, .box__img-zebra {
   justify-content: center;
 }
 
@@ -92,12 +106,73 @@ h1 {
   width: 70%;
 }
 
+.box__img-jam img {
+  width: 38%;
+}
+
+.box__img-kangaroo img {
+  width: 42%;
+}
+
+.box__img-lemon img {
+  width: 47%;
+}
+
+.box__img-mouse img {
+  width: 48%;
+}
+
+.box__img-nut img {
+  width: 53%;
+}
+
+.box__img-pig img {
+  width: 60%;
+}
+
+.box__img-queen img {
+  width: 62%;
+}
+
+.box__img-rocket img {
+  width: 52%;
+}
+
+.box__img-snake img {
+  width: 44%;
+}
+
+.box__img-telephone img {
+  width: 88%;
+}
+
+.box__img-vase img {
+  width: 31%;
+}
+
+.box__img-window img {
+  width: 40%;
+}
+
+.box__img-fox img {
+  width: 45%;
+}
+
+.box__img-yellow img {
+  width: 33%;
+}
+
+.box__img-zebra img {
+  width: 45%;
+}
+
 .box p {
   padding-bottom: 1em;
 }
 
 .box span {
-  padding: 0.7em;
+  padding: 0.35em;
+  font-size: 0.9em;
   font-weight: 600;
 }
 
